@@ -9,7 +9,7 @@ def main():
 ## argument parsing, because arguing correctly is very important
     parser = argparse.ArgumentParser()
     parser.add_argument('-t','--target', required=True, type=str, help="Target IP address")
-    parser.add_argument('-r','--protocol', choices = ["tcp","udp"],required=True, type=str, help="Protocol to use only tcp and icmp are supported currently")
+    parser.add_argument('-r','--protocol', choices = ["tcp","udp"],required=True, type=str, help="Protocol to use only tcp and udp are supported currently")
     parser.add_argument('-p','--port', required=True, type=int, help="Port to scan")
     parser.add_argument('-c','--count', required=False, default=3, type=int, help="Number of packets to send")
     parser.add_argument('-f','--flags', choices = ["SA","S"],required=False, default="S", type=str, help="Flags to send on a TCP scan")
