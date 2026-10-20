@@ -9,7 +9,7 @@ options:
   -h, --help            show this help message and exit
   -t, --target TARGET   Target IP address
   -r, --protocol {tcp,udp}
-                        Protocol to use only tcp and icmp are supported
+                        Protocol to use only tcp and udp are supported
                         currently
   -p, --port PORT       Port to scan
   -c, --count COUNT     Number of packets to send
